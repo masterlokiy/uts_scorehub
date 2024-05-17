@@ -1,0 +1,137 @@
+body {
+  background-color:white !important ;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* awal navbar */
+.navbar{
+  background-color: rgb(166, 166, 166) ;
+  padding: 15px;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px; /* Space for the bottom border */
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-size:1.2rem; /* Increase the font size of the links */
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px; /* Height of the underline */
+  display: block;
+  margin-top: 5px; /* Space from the text */
+  right: 0;
+  background: currentColor; /* Use the current text color */
+  transition: width 0.3s ease; /* Smooth transition for the underline */
+  -webkit-transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%; /* Full width underline on hover */
+  left: 0;
+  right: auto;
+}
+
+.rounded-top-left-1 {
+  border-top-left-radius: 4rem;
+}
+.rounded-top-right-1 {
+  border-top-right-radius: 1rem;
+}
+.rounded-bottom-left-1 {
+  border-bottom-left-radius: 1rem;
+}
+.rounded-bottom-right-1 {
+  border-bottom-right-radius: 1rem;
+}
+.container-fluid .navbar-brand {
+  background: linear-gradient(to right, red, yellow);
+}
+/* akhir navbar */
+
+/* mengatur logo */
+.premier-leguage,
+.bunders-liga,
+.laliga,
+.serie-A,
+.ligue-1 {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding: 20px;
+}
+.premier-leguage img,
+.bunders-liga img,
+.laliga img,
+.serie-A img,
+.ligue-1 img {
+  max-width: 50px; 
+  height: auto;
+  margin-right: 10px;
+}
+.premier-leguage h3,
+.bunders-liga h3,
+.laliga h3,
+.serie-A h3,
+.ligue-1 h3 {
+  margin-top: 1rem;
+  color: black;
+}
+
+.Liga-Liga a {
+  text-decoration: none;
+}
+
+.Liga-Liga a :hover {
+  color: red;
+}
+
+/* berita bawah */
+.berita{
+  justify-content: end;
+  align-items: end;
+  padding: 20px;
+}
+.berita img{
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Tulisan Table */
+.tabel-Epl{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding: 10px;
+}
+.tabel-Epl img{
+  max-width: 50px; 
+  height: auto;
+  margin-right: 10px;
+}
+.tabel-Epl h3{
+  margin-top: 1rem;
+}
+
+.tabel,
+.name-tag{
+  display: flex;
+  justify-content: center;
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.footer{
+  background-color: rgb(166, 166, 166);
+  margin-top: 5px;
+}
